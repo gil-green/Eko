@@ -2,6 +2,10 @@
 
 import { Checkbox } from "@heroui/react";
 
+type GridProps = {
+  size: number;
+};
+
 function Cell() {
   return (
     <Checkbox name="cell1" className="justify-center w-fit">
@@ -18,9 +22,8 @@ function Cell() {
   )
 }
 
-export default function Grid({size}) {
+export default function Grid({size}: GridProps) {
   const items = Array.from({length: size});
-  const gridClassName = `grid grid-cols-${size} gap-2 w-fit`
 
   return (
     <div className="flex flex-col gap-2 w-fit">
