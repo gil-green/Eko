@@ -1,6 +1,6 @@
 "use client";
 
-import { Checkbox, Label } from "@heroui/react";
+import { Checkbox } from "@heroui/react";
 
 function Cell() {
   return (
