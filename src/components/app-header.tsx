@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
 import {Stopwatch} from "@gravity-ui/icons";
-import { Button, Header } from '@heroui/react'
 
 function AppHeader() {
   return (
