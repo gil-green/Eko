@@ -1,11 +1,15 @@
 import AppName from './home/app-name'
-import ChallengeChooser from './home/challenge-chooser'
+import type { DifficultyChooserProps } from './challenge-config'
+import { DifficultyChooser, ChallengeChooser } from './home/challenge-chooser'
 
-function HomePage() {
+function HomePage({currDifficulty, setDifficulty}: DifficultyChooserProps) {
   return (
     <div className="flex flex-col gap-10">
       <AppName />
-      <ChallengeChooser />
+      <div>
+        <DifficultyChooser currDifficulty={currDifficulty} setDifficulty={setDifficulty}/>
+        <ChallengeChooser />
+      </div>
     </div>
   )
 }
